@@ -4,9 +4,7 @@ import streamlit as st
 import datetime
 
 import os
-from dotenv import load_dotenv
 
-load_dotenv
 openai.api_key = st.secrets["apiSecret"]
 
 response = openai.ChatCompletion.create(
